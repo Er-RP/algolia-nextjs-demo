@@ -1,2 +1,2 @@
-# algolia-nextjs-demo
-Algolia integration with Next JS App
+# algolia-react-demo
+Algolia integration with React JS App

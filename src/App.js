@@ -1,27 +1,17 @@
 import React from "react";
 import "instantsearch.css/themes/satellite.css";
-import { Form, Link, Outlet, useLoaderData } from "react-router-dom";
+import {Outlet } from "react-router-dom";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 const App = () => {
-  // const data = useLoaderData();
-  // console.log("RP loader data : ", data);
   return (
-    <div>
-      <div className="m-5 flex gap-5 ">
-        <Link to="/" className="italic font-mono">
-          Home
-        </Link>
-        <Link to="/browse">Landing</Link>
-        <Link to="/my_product/100">Detail</Link>
-        <Link to="/cart">Cart</Link>
-      </div>
-      {/* <Form method="post">
-        <input type="text" name="title"  className="b-1"/>
-        <input type="text" name="description" />
-        <button type="submit">New</button>
-      </Form> */}
+    <div className="flex min-h-svh flex-col">  
+      <Header/>
+      <div className="grow min-h-96">
       <Outlet />
-      <div className="m-5">Footer</div>
+      </div>
+      <Footer/>
     </div>
   );
 };

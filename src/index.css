@@ -38,6 +38,14 @@
   --secondary-900: #f9f9f9;
   }
 }
+/* footer icon size */
+
+.footer-ul{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  margin-top: 28px;
+}
 
 body {
   margin: 0;

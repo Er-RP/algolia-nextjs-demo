@@ -29,7 +29,7 @@ const Footer = () => {
     'About Us',
     'Contact Us',
     'Shopping Cart',
-    'Whishlist',
+    'Wishlist',
     'All Collections',
     'Privacy & Policy',
     'Terms & Condition',

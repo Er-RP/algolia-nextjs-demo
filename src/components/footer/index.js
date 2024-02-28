@@ -1,21 +1,10 @@
 
 
-  import React from 'react';
-import fb_image from '../../images/icons/fb.svg';
-import insta_image from '../../images/icons/insta.svg';
-import pinterest_image from '../../images/icons/pinterest.svg';
-import twitter_image from '../../images/icons/twitter.svg';
+import React from 'react';
+import ContactInfo from './ContactInfo';
 
 const Footer = () => {
-  const ContactInfo = {
-    address: "3, Kongu Street, Ramanathapuram, Coimbatore.",
-    socialmedia: [
-      { icon: fb_image, alt: 'facebook' },
-      { icon: insta_image, alt: 'instagram' },
-      { icon: pinterest_image, alt: 'pinterest' },
-      { icon: twitter_image, alt: 'twitter' },
-    ]
-  };
+ 
 
   const FindInFast = [
     'Accessories',
@@ -51,11 +40,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h2 className="text-xl font-bold mb-4">Contact Info</h2>
-            <p className="text-sm">{ContactInfo.address}</p>
             <div className="flex mt-4">
-              {ContactInfo.socialmedia.map((social, index) => (
-                <img key={index} src={social.icon} alt={social.alt} className="w-6 h-6 mr-4 hover:scale-105 duration-75 cursor-pointer" />
-              ))}
+             <ContactInfo/>
             </div>
           </div>
           <div>

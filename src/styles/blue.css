@@ -1,0 +1,14 @@
+html[data-theme="blue"] {
+  --text: #050218;
+  --background: #f8f6fe;
+  --primary: #4722ec;
+  --secondary: #f58ad8;
+  --accent: #f04c90;
+}
+html[data-theme="blue"][data-mode="dark"] {
+  --text: #eae7fd;
+  --background: #030109;
+  --primary: #3813dd;
+  --secondary: #750a59;
+  --accent: #b30f53;
+}

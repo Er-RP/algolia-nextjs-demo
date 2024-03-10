@@ -87,7 +87,7 @@ const Autocomplete = () => {
     return () => {
       search.destroy();
     };
-  }, [props]);
+  }, []);
 
   return <div ref={containerRef} />;
 };

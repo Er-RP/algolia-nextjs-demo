@@ -44,7 +44,7 @@ const ErrorMessage = () => {
 const NothingFound = () => {
   return (
     <div className="pt-4 text-center">
-      <h2 className="ont-bold mb-2">Oops! Nothing Found</h2>
+      <h2 className="font-bold mb-2">Oops! Nothing Found</h2>
       <p className="text-base">
         It seems we misplaced it... or maybe it's on vacation! 🏖️
         <br />

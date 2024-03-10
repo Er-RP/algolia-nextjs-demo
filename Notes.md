@@ -1,4 +1,4 @@
-#### Script to created Category index
+#### Script to create Category index
 
 ```
 function convertToNestedStructure(input) {

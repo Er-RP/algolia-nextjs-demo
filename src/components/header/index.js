@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PrimaryLogo from "../../icons/primaryLogo";
 import CartSVG from "../../icons/cart";
 import MegaMenu from "./megaMenu";
+import Autocomplete from "./autoComplete";
 
 const Header = () => {
   const catRef = useRef()
@@ -12,7 +13,7 @@ const Header = () => {
  fromTopOffset && fromTopOffset !== topValue && setTopValue(fromTopOffset)
   },[catRef?.current])
   return (
-    <div  className="sticky top-0 px-6  grid grid-cols-[70px,1fr,80px] items-center gap-5  shrink-0 h-auto primary_header border-b-4 border-b-accent">
+    <div  className="sticky top-0 px-6  grid grid-cols-[70px,auto,1fr,80px] items-center gap-5  shrink-0 h-auto primary_header border-b-4 border-b-accent">
       
       <div className="md:order-2">
         <div className="hidden md:block">
@@ -33,7 +34,10 @@ const Header = () => {
           <PrimaryLogo />
         </Link>
       </div>
-      <div className="text-right justify-self-end order-3">
+      <div className="order-3 py-1">
+     <Autocomplete/>
+      </div>
+      <div className="text-right justify-self-end order-4">
         <Link to="/cart">
           <CartSVG />
         </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import "instantsearch.css/themes/satellite.css";
+import '@algolia/autocomplete-theme-classic';
 import { Outlet } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";

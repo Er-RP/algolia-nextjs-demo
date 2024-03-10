@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@algolia/autocomplete-js": "^1.17.0",
+    "@algolia/autocomplete-theme-classic": "^1.17.0",
     "algoliasearch": "^4.22.1",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.0.5",

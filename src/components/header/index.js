@@ -10,7 +10,7 @@ const Header = () => {
   const [topValue,setTopValue]=useState(0)
   useEffect(()=>{
   const fromTopOffset = catRef?.current?.offsetHeight
- fromTopOffset && fromTopOffset !== topValue && setTopValue(fromTopOffset)
+ fromTopOffset && fromTopOffset !== topValue && setTopValue(fromTopOffset + 4)
   },[catRef?.current])
   return (
     <div  className="sticky top-0 px-6  grid grid-cols-[70px,auto,1fr,80px] items-center gap-5  shrink-0 h-auto primary_header border-b-4 border-b-accent">
